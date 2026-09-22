@@ -1,0 +1,56 @@
+{
+  "entities": {
+    "UserProfile": {
+      "collection": "users",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "name": { "type": "string", "required": true },
+        "phone": { "type": "string", "required": false },
+        "email": { "type": "string", "required": true },
+        "city": { "type": "string", "required": false },
+        "birthDate": { "type": "string", "required": false },
+        "role": { "type": "string", "required": true },
+        "balance": { "type": "number", "required": false },
+        "completedOrdersCount": { "type": "number", "required": false },
+        "rating": { "type": "number", "required": false },
+        "providerDetails": { "type": "map", "required": false },
+        "createdAt": { "type": "string", "required": false }
+      }
+    },
+    "Order": {
+      "collection": "orders",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "orderNumber": { "type": "string", "required": true },
+        "serviceTitle": { "type": "string", "required": true },
+        "category": { "type": "string", "required": true },
+        "client": { "type": "map", "required": true },
+        "status": { "type": "string", "required": true },
+        "createdAt": { "type": "string", "required": true },
+        "scheduledDate": { "type": "string", "required": true },
+        "price": { "type": "number", "required": true },
+        "paymentMethod": { "type": "string", "required": true },
+        "paymentStatus": { "type": "string", "required": true },
+        "location": { "type": "map", "required": true },
+        "assignedWorker": { "type": "map", "required": false },
+        "rating": { "type": "number", "required": false },
+        "workerRating": { "type": "number", "required": false },
+        "reviewComment": { "type": "string", "required": false },
+        "notes": { "type": "string", "required": false }
+      }
+    },
+    "AppNotification": {
+      "collection": "notifications",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "userId": { "type": "string", "required": false },
+        "title": { "type": "string", "required": true },
+        "message": { "type": "string", "required": true },
+        "time": { "type": "string", "required": true },
+        "read": { "type": "boolean", "required": true },
+        "type": { "type": "string", "required": true },
+        "orderId": { "type": "string", "required": false }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-dark: #2B1B3D;
+    --brand-primary: #FF6B53;
+    --brand-rose: #FF9EB4;
+    --brand-aubergine: #3C2E4C;
+    --brand-ivory: #FDFBF5;
+
+    /* Semantic Aliases */
+    --brand-stone: #FF6B53;
+    --brand-accent: #FF9EB4;
+    --brand-contrast: #3C2E4C;
+    --brand-neutral: #FDFBF5;
+  }
+}
+
+/* Abstract geometric / topographic / aubergine pattern overlay matching identity guide */
+.bg-topo-pattern {
+  background-color: #FDFBF5;
+  background-image: radial-gradient(#FF6B53 0.75px, transparent 0.75px), radial-gradient(#FF9EB4 0.75px, #FDFBF5 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.brand-gradient-btn {
+  background: linear-gradient(135deg, #FF6B53 0%, #FF9EB4 100%);
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+
+.brand-gradient-btn:hover {
+  background: linear-gradient(135deg, #E6553D 0%, #F58B9F 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px -5px rgba(255, 107, 83, 0.4);
+}
+
+.brand-dark-btn {
+  background: #2B1B3D;
+  color: #FDFBF5;
+  border: 1px solid #3C2E4C;
+  transition: all 0.2s ease-in-out;
+}
+
+.brand-dark-btn:hover {
+  background: #3C2E4C;
+  border-color: #FF6B53;
+}
+
+.brand-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(43, 27, 61, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(43, 27, 61, 0.05);
+}
+
+.brand-card-dark {
+  background: linear-gradient(145deg, #2B1B3D 0%, #3C2E4C 100%);
+  color: #FDFBF5;
+  border: 1px solid rgba(255, 158, 180, 0.2);
+}
+
+/* Mesh gradient from Deep Plum to Vibrant Coral */
+.brand-mesh-gradient {
+  background: linear-gradient(135deg, #2B1B3D 0%, #3C2E4C 50%, #FF6B53 100%);
+}
+
+/* Hide scrollbar across all browsers */
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+
+html, body, * {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

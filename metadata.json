@@ -1,0 +1,6 @@
+{
+  "name": "تطبيق الخدمات الميدانية",
+  "description": "تطبيق يجمع مقدم الخدمة والعميل وفريق العمل في منصة واحدة مع خريطة تفاعلية ومتابعة فورية للطلبات.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
